@@ -319,6 +319,9 @@ $boder-color: #ccc;
                             width: 5rem;
                         }
                     }
+                    .cart-popup{
+                        top: 4rem!important;
+                    }
                 }
             }
         }
@@ -433,6 +436,30 @@ $boder-color: #ccc;
                         .cart--name {
                             display: none;
                         }
+                        .cart-popup{
+                            position: fixed;
+                            top: 5.2rem;
+                            width: 100%;
+                            .cart__product{
+                                padding: 0 1rem;
+                                .productItem-info{
+                                    a,span{
+                                        font-size: 1.3rem;
+                                        margin-top: 3rem;
+                                    }
+                                }
+                            }
+                            .cart__footer{
+                                flex-direction: column;
+                                a{
+                                    width: 100%;
+                                }
+                                .btn{
+                                    width: 100%;
+                                    margin-top: 1rem;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -459,6 +486,16 @@ $boder-color: #ccc;
                 .submitEmail button {
                     width: 100% !important;
                 }
+            }
+        }
+    }
+}
+@media  only screen and (max-width: 350px) {
+    .cart__product{
+        .productItem-info{
+            a,span{
+                font-size: 1.1rem!important;
+                margin-top: 1rem!important;
             }
         }
     }

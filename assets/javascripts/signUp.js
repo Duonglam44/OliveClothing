@@ -1,5 +1,6 @@
 checkAllInput();
 checkPass();
+checkEmailType();
 
 // kiểm tra input rỗng
 function checkAllInput() {
@@ -41,5 +42,21 @@ function checkPass() {
             checkRePass.style.display = 'none';
         }
     });
+}
+// kiểm tra hợp lệ email
+function checkEmailType() {
+    var formList = document.querySelectorAll('.require');
+    var emailInput = formList[0].querySelector('input');
+    var emailWarning = formList[0].querySelector('span');
+    var reg_email = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+    emailInput.addEventListener('focusout', () => {
+        if (reg_email.test(emailInput.value) == false) {
+            emailWarning.innerHTML = '<i class="fal fa-times"></i> Please use a valid email address, such as user@example.com.';
+            emailWarning.classList.add('warning-active');
+        }
+        else {
+            emailWarning.classList.remove('warning-active');
+        }
+    })
 }
 

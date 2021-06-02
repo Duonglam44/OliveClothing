@@ -154,16 +154,16 @@ $warning-color: #ff7d7d;
         padding-bottom: 3rem;
         .signIn{
             align-items: center;
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding-top: 4rem;
             &__about{
                 width: 100%;
                 margin: 0;
+                margin-top: 3rem;
             }
             &__form{
                 width: 100%;
                 margin: 0;
-                margin-top: 3rem;
             }
         }
     }

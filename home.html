@@ -17,6 +17,9 @@
     <!-- google font tangerine -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <!-- import owlcarousel -->
+    <link rel="stylesheet" href="./assets/lib/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/owl-carousel/owl.theme.default.min.css">
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- base css -->
@@ -419,10 +422,10 @@
                                 </li>
                             </ul>
                             <div class="cart__footer">
-                                <a href="#" >
+                                <a href="#">
                                     <button class="checkout-btn btn">checkout</button>
                                 </a>
-                                <a href="./cart.html" >
+                                <a href="./cart.html">
                                     <button class="viewCart-btn btn">View Cart</button>
                                 </a>
                             </div>
@@ -434,11 +437,24 @@
         <div class="header__banner">
             <p><i class="fas fa-truck-moving"></i> YOUR SHOPPING CART QUALIFIES FOR FREE SHIPPING WITHIN THE UK.</p>
         </div>
-        <!-- <div id="overlay"></div> -->
     </header>
     <!-- carousel -->
-    <div class="carousel">
-        <img src="./assets/images/home_banner.jpeg" alt="">
+    <div class="carousel__wrapper">
+        <div class="carousel-banner blockImg">
+            <img src="./assets/images/home_banner.jpeg" alt="">
+        </div>
+        <div class="carousel-slider owl-carousel owl-theme">
+            <div class="carouselBox">
+                <a href="./product.html">
+                    <img src="./assets/images/home_banner1.jpg" alt="">
+                </a>
+            </div>
+            <div class="carouselBox">
+                <a href="./product.html">
+                    <img src="./assets/images/home_banner2.jpg" alt="">
+                </a>
+            </div>
+        </div>
     </div>
     <!-- banner -->
     <div class="banner__wrapper">
@@ -522,8 +538,15 @@
             </ul>
         </div>
     </div>
+
+    <!-- jquey 3.6 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- owl-carousel js -->
+    <script src="assets/lib/owl-carousel/owl.carousel.min.js"></script>
     <!-- js -->
     <script src="./assets/javascripts/masterPage.js"></script>
+    <!-- this page js -->
+    <script src="./assets/javascripts/home.js"></script>
 </body>
 
 </html>

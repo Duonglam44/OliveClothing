@@ -287,6 +287,9 @@
   .header__upper .navUser .user__options .nav__search input {
     width: 5rem;
   }
+  .header__upper .navUser .user__options .cart-popup {
+    top: 4rem !important;
+  }
 }
 @media only screen and (max-width: 800px) {
   .appearNav {
@@ -378,6 +381,28 @@
   .header__upper .navUser .user__options .nav__cart .cart--name {
     display: none;
   }
+  .header__upper .navUser .user__options .nav__cart .cart-popup {
+    position: fixed;
+    top: 5.2rem;
+    width: 100%;
+  }
+  .header__upper .navUser .user__options .nav__cart .cart-popup .cart__product {
+    padding: 0 1rem;
+  }
+  .header__upper .navUser .user__options .nav__cart .cart-popup .cart__product .productItem-info a, .header__upper .navUser .user__options .nav__cart .cart-popup .cart__product .productItem-info span {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+  .header__upper .navUser .user__options .nav__cart .cart-popup .cart__footer {
+    flex-direction: column;
+  }
+  .header__upper .navUser .user__options .nav__cart .cart-popup .cart__footer a {
+    width: 100%;
+  }
+  .header__upper .navUser .user__options .nav__cart .cart-popup .cart__footer .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
   .header__banner p {
     padding: 2rem 0;
     letter-spacing: 0;
@@ -396,6 +421,12 @@
   .footer__top .email__wrapper input,
 .footer__top .email__wrapper .submitEmail button {
     width: 100% !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .cart__product .productItem-info a, .cart__product .productItem-info span {
+    font-size: 1.1rem !important;
+    margin-top: 1rem !important;
   }
 }
 

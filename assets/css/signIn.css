@@ -143,17 +143,17 @@
   }
   .signIn__wrapper .signIn {
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding-top: 4rem;
   }
   .signIn__wrapper .signIn__about {
     width: 100%;
     margin: 0;
+    margin-top: 3rem;
   }
   .signIn__wrapper .signIn__form {
     width: 100%;
     margin: 0;
-    margin-top: 3rem;
   }
 }
 

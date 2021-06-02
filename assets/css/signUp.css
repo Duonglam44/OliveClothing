@@ -32,6 +32,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+.signUp__wrapper .signUp__content-forms .signUp__content-form input[type=number]::-webkit-inner-spin-button,
+.signUp__wrapper .signUp__content-forms .signUp__content-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .signUp__wrapper .signUp__content-forms .signUp__content-form label,
 .signUp__wrapper .signUp__content-forms .signUp__content-form input,
 .signUp__wrapper .signUp__content-forms .signUp__content-form span {

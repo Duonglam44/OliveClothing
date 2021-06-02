@@ -17,17 +17,17 @@ $warning-color: #ff7d7d;
     left: 0;
     z-index: 999;
 }
-// 
-.signUp__wrapper{
+//
+.signUp__wrapper {
     margin-top: 11.2rem;
-    .signUp{
+    .signUp {
         width: 80rem;
         max-width: 100%;
         margin: 0 auto;
         padding: 0 1rem;
-        &__content{
+        &__content {
             padding: 1rem 0 3rem;
-            &-header{
+            &-header {
                 width: 100%;
                 text-align: center;
                 padding: 2rem;
@@ -38,63 +38,68 @@ $warning-color: #ff7d7d;
                 color: $pri-color;
             }
 
-            &-forms{
+            &-forms {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 2rem;
-                .signUp__content-form{
+                .signUp__content-form {
+                    input[type="number"]::-webkit-inner-spin-button,
+                    input[type="number"]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
                     label,
                     input,
-                    span{
+                    span {
                         display: block;
                     }
-                    label{
+                    label {
                         font-size: 1.3rem;
                         font-weight: 300;
                         text-transform: capitalize;
                         color: $pri-color;
                         margin: 1rem 0;
-                        small{
+                        small {
                             float: right;
                             font-size: 1.1rem;
                             font-weight: 400;
                             text-transform: uppercase;
-                            color:  rgb(215, 215, 215);
+                            color: rgb(215, 215, 215);
                         }
                     }
-                    > input{
+                    > input {
                         height: 3.5rem;
                         margin-bottom: 1rem;
                         font-size: 1.3rem;
                         width: 100%;
                         outline: none;
                         border: 1px solid $boder-color;
-                        border-radius: .2rem;
+                        border-radius: 0.2rem;
                     }
                     // bắt lỗi nhập dữ liệu
-                    .warning{
+                    .warning {
                         font-size: 1.2rem;
                         color: $warning-color;
                         display: none;
                     }
-                    .warning-active{
+                    .warning-active {
                         display: block;
                     }
-                    // 
-                    select{
+                    //
+                    select {
                         width: 100%;
                         height: 3.5rem;
                         // -webkit-appearance: none;
                         // appearance: none;
-                        border: 1px solid $boder-color
+                        border: 1px solid $boder-color;
                     }
-                    .radio-item{
+                    .radio-item {
                         @include flexbox(flex-start, center);
-                        padding: .5rem 0;
-                        input{
-                            margin-right: 2rem;;
+                        padding: 0.5rem 0;
+                        input {
+                            margin-right: 2rem;
                         }
-                        span{
+                        span {
                             font-size: 1.3rem;
                             font-weight: 400;
                             color: $pri-color;
@@ -102,19 +107,19 @@ $warning-color: #ff7d7d;
                     }
                 }
             }
-            .createAccount-btn{
+            .createAccount-btn {
                 margin-top: 3rem;
                 padding: 1.5rem 3rem;
                 font-size: 1.3rem;
                 font-weight: 400;
-                letter-spacing: .3rem;
+                letter-spacing: 0.3rem;
                 text-transform: uppercase;
                 background-color: #000;
                 border: 1px solid #000;
-                border-radius: .3rem;
+                border-radius: 0.3rem;
                 color: $white-color;
-                transition: all ease .2s;
-                &:hover{
+                transition: all ease 0.2s;
+                &:hover {
                     background-color: $white-color;
                     color: #000;
                 }
@@ -123,15 +128,15 @@ $warning-color: #ff7d7d;
     }
 }
 
-@media only screen and (max-width: 550px)  {
-    .signUp__wrapper{
-        .signUp{
-            &__content{
-                &-forms{
+@media only screen and (max-width: 550px) {
+    .signUp__wrapper {
+        .signUp {
+            &__content {
+                &-forms {
                     grid-template-columns: 1fr;
                 }
             }
-            .createAccount-btn{
+            .createAccount-btn {
                 width: 100%;
             }
         }

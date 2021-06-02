@@ -11,12 +11,13 @@ $boder-color: #ccc;
 }
 // css header section for this page
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
     &__upper {
-        background: transparent;
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
+        background: transparent;
         input {
             border-bottom: none !important;
         }
@@ -32,13 +33,25 @@ $boder-color: #ccc;
     }
 }
 //carousel section
-.carousel {
+.carousel__wrapper{
     width: 100%;
-    height: auto;
-    img {
+    .carousel-banner{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .carousel-slider{
+        .carouselBox {
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }
 // banner section
@@ -104,6 +117,9 @@ $boder-color: #ccc;
 }
 
 @media only screen and (max-width: 800px) {
+    .carousel__wrapper{
+        margin-top: 5.2rem;
+    }
     .banner__wrapper {
         .banner {
             &__header {
